@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&family=STIX+Two+Text:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fbfaf6;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-brand {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Hero / Jumbotron */
+.jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 8rem 1rem;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-family: 'STIX Two Text', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.jumbotron p {
+  font-size: 1.25rem;
+}
+
+/* Card Menu */
+.card-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Tombol */
+.btn-warning {
+  background-color: #ffae00;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-warning:hover {
+  background-color: #ff8800;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* About */
+#about {
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+#about img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* SVG Wave for About */
+.custom-shape-divider-top-169943 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-169943 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-169943 .shape-fill {
+  fill: #f5cf8e;
+}
+
+/* Contact */
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url('https://images.pexels.com/photos/7629782/pexels-photo-7629782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#contact h2, #contact p, #contact label {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #af762f;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .jumbotron h1 {
+    font-size: 2.2rem;
+  }
+
+  .jumbotron p {
+    font-size: 1rem;
+  }
+
+  #about img {
+    margin-top: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
